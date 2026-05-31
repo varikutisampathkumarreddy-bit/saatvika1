@@ -390,7 +390,7 @@ function initForm() {
     btn.disabled = true;
     btn.innerHTML = '<span>⏳</span> Sending request...';
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzpcfy8b1xnHOcWV5fcdA4_NAKmEEuWW-8lVsh95PiGvB85C1lDy0wGS0TxJgQB21Rc/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-Rykfc5KgaJz2JBM009-Lcm0pjMUKK9EJjAnrhFEuNRhhcMmz82KjzCJn_eyc4xbh/exec';
 
     // Construct request data
     const formData = new FormData(form);
