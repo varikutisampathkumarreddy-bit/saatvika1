@@ -689,6 +689,38 @@
         </div>
       </div>
 
+      <!-- Contact Form -->
+      <div class="contact__form-wrapper reveal">
+        <form class="contact-form" id="contactForm">
+          <h3 class="contact-form__title">Send us a Message</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="5" placeholder="Your message..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary">
+            <span>📨</span> Send Message
+          </button>
+        </form>
+      </div>
+
       <div class="contact__map reveal">
         <div class="contact__map-placeholder">
           <div class="contact__map-icon">🗺️</div>

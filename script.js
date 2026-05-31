@@ -26,8 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── 3D Carousel ───
   initCarousel();
 
-  // ─── Appointment Form ───
+  // ─── Form ───
   initForm();
+  initContactForm();
 
   // ─── Counter Animation ───
   initCounters();
@@ -515,6 +516,61 @@ function animateCounter(element) {
   }
 
   requestAnimationFrame(update);
+}
+
+/* ============================================================
+   FORM — Contact
+   ============================================================ */
+function initContactForm() {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const btn = form.querySelector('.btn--primary');
+    const originalText = btn.innerHTML;
+
+    btn.disabled = true;
+    btn.innerHTML = '<span>⏳</span> Sending...';
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRUCreit3uTePizcnpHrv-Vwu5cBMz-5gDoqoCvzJx0bF9VcBTrIcMAXw7Zan4y4bK/exec';
+
+    const formData = new FormData(form);
+
+    fetch(scriptURL, {
+      method: 'POST',
+      body: formData,
+      mode: 'no-cors'
+    })
+    .then(response => {
+      btn.innerHTML = '<span>✅</span> Message Sent!';
+      btn.style.background = 'linear-gradient(135deg, hsl(145, 70%, 45%), hsl(168, 80%, 45%))';
+      btn.style.boxShadow = '0 4px 15px hsla(145, 70%, 45%, 0.4)';
+
+      createConfetti(btn);
+
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = originalText;
+        btn.style.background = '';
+        btn.style.boxShadow = '';
+        form.reset();
+      }, 4000);
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+      btn.innerHTML = '<span>❌</span> Error Sending';
+      btn.style.background = 'linear-gradient(135deg, hsl(0, 70%, 45%), hsl(10, 80%, 45%))';
+      btn.style.boxShadow = '0 4px 15px hsla(0, 70%, 45%, 0.4)';
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = originalText;
+        btn.style.background = '';
+        btn.style.boxShadow = '';
+      }, 4000);
+    });
+  });
 }
 
 /* ============================================================

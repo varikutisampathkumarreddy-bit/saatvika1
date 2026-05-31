@@ -1826,6 +1826,48 @@ input, textarea, select {
   color: var(--clr-primary-light);
 }
 
+/* Contact Form */
+.contact__form-wrapper {
+  width: 100%;
+  margin-top: var(--space-2xl);
+  perspective: var(--perspective);
+}
+
+.contact-form {
+  background: var(--clr-glass);
+  border: 1px solid var(--clr-glass-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl);
+  backdrop-filter: blur(25px) saturate(1.3);
+  -webkit-backdrop-filter: blur(25px) saturate(1.3);
+  transform-style: preserve-3d;
+  transition: var(--transition-slow);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--clr-primary), var(--clr-secondary), var(--clr-accent));
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.contact-form__title {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  transform: translateZ(20px);
+}
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */
