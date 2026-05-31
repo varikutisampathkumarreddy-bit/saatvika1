@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trusted family healthcare clinic in Bengaluru providing general medicine, pediatric care, elder care, preventive health checkups, and chronic disease management.">
+  <title>Saatvika Family Clinic | Family Doctor in Bengaluru</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+</head>
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <div class="loader-pulse"></div>
+      <div class="loader-text">Saatvika</div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">
+        <div class="nav__logo-icon">⚕</div>
+        <span class="nav__logo-text">Saatvika</span>
+      </a>
+
+      <div class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#doctors" class="nav__link">Doctors</a>
+        <a href="#testimonials" class="nav__link">Testimonials</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#appointments" class="nav__cta">Book Appointment</a>
+      </div>
+
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav__overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <!-- Background -->
+    <div class="hero__bg">
+      <div class="hero__bg-gradient"></div>
+      <div class="hero__grid"></div>
+    </div>
+
+    <!-- Parallax Orbs -->
+    <div class="hero__parallax" id="parallaxContainer">
+      <div class="parallax-layer orb orb--1" data-speed="0.03"></div>
+      <div class="parallax-layer orb orb--2" data-speed="0.05"></div>
+      <div class="parallax-layer orb orb--3" data-speed="0.02"></div>
+    </div>
+
+    <!-- 3D Floating Medical Objects -->
+    <div class="hero__3d-scene" id="hero3DScene">
+      <!-- 3D Pill Capsule -->
+      <div class="floating-pill" data-speed="0.04">
+        <div class="pill-half pill-half--top"></div>
+        <div class="pill-half pill-half--bottom"></div>
+      </div>
+
+      <!-- 3D DNA Helix -->
+      <div class="floating-dna" data-speed="0.02">
+        <div class="dna-rung"><div class="dna-bar"></div></div>
+        <div class="dna-rung"><div class="dna-bar"></div></div>
+        <div class="dna-rung"><div class="dna-bar"></div></div>
+        <div class="dna-rung"><div class="dna-bar"></div></div>
+        <div class="dna-rung"><div class="dna-bar"></div></div>
+        <div class="dna-rung"><div class="dna-bar"></div></div>
+        <div class="dna-rung"><div class="dna-bar"></div></div>
+        <div class="dna-rung"><div class="dna-bar"></div></div>
+        <div class="dna-rung"><div class="dna-bar"></div></div>
+        <div class="dna-rung"><div class="dna-bar"></div></div>
+      </div>
+
+      <!-- Floating Crosses -->
+      <div class="floating-cross floating-cross--1" data-speed="0.06"></div>
+      <div class="floating-cross floating-cross--2" data-speed="0.03"></div>
+
+      <!-- Heartbeat SVG -->
+      <div class="floating-heartbeat" data-speed="0.04">
+        <svg class="heartbeat-line" viewBox="0 0 200 60">
+          <polyline points="0,30 30,30 40,30 50,10 60,50 70,20 80,40 90,30 120,30 130,30 140,10 150,50 160,20 170,40 180,30 200,30"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Trusted by 4,800+ Families in Bengaluru
+        </div>
+
+        <h1 class="hero__title text-3d">
+          Where Families Find<br>
+          <span class="hero__title-highlight">Trusted Care</span>
+        </h1>
+
+        <p class="hero__description">
+          Comprehensive primary healthcare for every stage of life — from pediatrics to elder care,
+          under one compassionate roof in Bengaluru.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#appointments" class="btn btn--primary">
+            <span>📅</span> Book Appointment
+          </a>
+          <a href="tel:+919876543210" class="btn btn--ghost">
+            <span>📞</span> Call Clinic
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-number">15+</div>
+            <div class="hero__stat-label">Years of Practice</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number">4800+</div>
+            <div class="hero__stat-label">Families Served</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number">60+</div>
+            <div class="hero__stat-label">Patients Weekly</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number">2009</div>
+            <div class="hero__stat-label">Trusted Since</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <!-- 3D Tilt Card -->
+        <div class="about__visual reveal-left">
+          <div class="about__card-3d" id="aboutTiltCard">
+            <div class="about__card-icon">🏥</div>
+            <h3 class="about__card-title">Your Neighbourhood Family Clinic</h3>
+            <p class="about__card-text">
+              Saatvika Family Clinic in BTM Layout, Bengaluru offers warm, accessible,
+              and evidence-based primary care for every member of your family —
+              from newborns to elders, all under one caring roof.
+            </p>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about__content reveal-right">
+          <span class="section__label">About Saatvika Family Clinic</span>
+          <h2 class="section__title">
+            Practicing Medicine<br>The Way It Should Be
+          </h2>
+          <p class="section__subtitle">
+            Dr. Srinivas Rao founded Saatvika Family Clinic with a simple belief — primary healthcare
+            should be accessible, personal, and never rushed. For more than 15 years, families across
+            Bengaluru have trusted him for compassionate and evidence-based care.
+          </p>
+
+          <div class="about__features">
+            <div class="about__feature">
+              <div class="about__feature-icon">👨‍👩‍👧</div>
+              <span class="about__feature-text">Family Medicine</span>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">👶</div>
+              <span class="about__feature-text">Pediatric Care</span>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">🩺</div>
+              <span class="about__feature-text">Preventive Healthcare</span>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">👴</div>
+              <span class="about__feature-text">Elder Care</span>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">🍬</div>
+              <span class="about__feature-text">Diabetes Management</span>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">❤️</div>
+              <span class="about__feature-text">Hypertension Care</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES — 3D Flip Cards ===== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="services__header reveal">
+        <span class="section__label" style="justify-content: center;">Our Services</span>
+        <h2 class="section__title">Comprehensive<br>Family Care</h2>
+        <p class="section__subtitle">
+          From routine checkups to chronic disease management, we provide
+          complete primary care for every age and stage of life.
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <!-- Card 1 -->
+        <div class="flip-card flip-card--1 reveal" style="transition-delay: 0.1s;">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <div class="flip-card__icon">🩺</div>
+              <h3 class="flip-card__title">General Medicine</h3>
+              <p class="flip-card__preview">Personalised care for everyday health concerns</p>
+            </div>
+            <div class="flip-card__back">
+              <h3 class="flip-card__back-title">General Medicine</h3>
+              <p class="flip-card__back-text">
+                From fever and infections to chronic illness management, Dr. Rao
+                provides thorough, unhurried consultations tailored to your unique health needs.
+              </p>
+              <a href="#appointments" class="flip-card__back-link">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flip-card flip-card--2 reveal" style="transition-delay: 0.2s;">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <div class="flip-card__icon">👶</div>
+              <h3 class="flip-card__title">Pediatric Care</h3>
+              <p class="flip-card__preview">Gentle, expert care for your little ones</p>
+            </div>
+            <div class="flip-card__back">
+              <h3 class="flip-card__back-title">Pediatric Care</h3>
+              <p class="flip-card__back-text">
+                Well-child visits, vaccinations, growth monitoring, and treatment
+                of common childhood illnesses in a calm, child-friendly environment.
+              </p>
+              <a href="#appointments" class="flip-card__back-link">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flip-card flip-card--3 reveal" style="transition-delay: 0.3s;">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <div class="flip-card__icon">👴</div>
+              <h3 class="flip-card__title">Elder Care</h3>
+              <p class="flip-card__preview">Compassionate care for your senior family members</p>
+            </div>
+            <div class="flip-card__back">
+              <h3 class="flip-card__back-title">Elder Care</h3>
+              <p class="flip-card__back-text">
+                Holistic management of age-related conditions including mobility issues,
+                multi-medication coordination, and regular health monitoring for seniors.
+              </p>
+              <a href="#appointments" class="flip-card__back-link">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flip-card flip-card--4 reveal" style="transition-delay: 0.4s;">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <div class="flip-card__icon">✅</div>
+              <h3 class="flip-card__title">Preventive Health Checkups</h3>
+              <p class="flip-card__preview">Stay ahead of illness with routine screening</p>
+            </div>
+            <div class="flip-card__back">
+              <h3 class="flip-card__back-title">Preventive Health Checkups</h3>
+              <p class="flip-card__back-text">
+                Comprehensive annual checkup packages for all age groups — blood panels,
+                BMI assessment, BP monitoring, and personalised health advice.
+              </p>
+              <a href="#appointments" class="flip-card__back-link">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="flip-card flip-card--5 reveal" style="transition-delay: 0.5s;">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <div class="flip-card__icon">🩹</div>
+              <h3 class="flip-card__title">Minor Procedures</h3>
+              <p class="flip-card__preview">Quick, safe in-clinic procedures</p>
+            </div>
+            <div class="flip-card__back">
+              <h3 class="flip-card__back-title">Minor Procedures</h3>
+              <p class="flip-card__back-text">
+                Wound dressing, suturing, injections, abscess drainage, and other
+                minor surgical procedures handled safely right at the clinic.
+              </p>
+              <a href="#appointments" class="flip-card__back-link">Book Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="flip-card flip-card--6 reveal" style="transition-delay: 0.6s;">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <div class="flip-card__icon">💬</div>
+              <h3 class="flip-card__title">Health Counselling</h3>
+              <p class="flip-card__preview">Guidance for a healthier lifestyle</p>
+            </div>
+            <div class="flip-card__back">
+              <h3 class="flip-card__back-title">Health Counselling</h3>
+              <p class="flip-card__back-text">
+                Personalised counselling on diet, exercise, stress management,
+                smoking cessation, and long-term disease prevention strategies.
+              </p>
+              <a href="#appointments" class="flip-card__back-link">Book Now →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOCTORS — 3D Tilt Cards ===== -->
+  <section class="doctors section" id="doctors">
+    <div class="container">
+      <div class="doctors__header reveal">
+        <span class="section__label" style="justify-content: center;">Meet the Doctor</span>
+        <h2 class="section__title">Your Family's<br>Trusted Physician</h2>
+        <p class="section__subtitle">
+          A dedicated family doctor who knows your name, remembers your history,
+          and genuinely cares about your wellbeing.
+        </p>
+      </div>
+
+      <div class="doctors__grid">
+        <!-- Doctor 1 -->
+        <div class="doctor-card reveal" data-tilt style="transition-delay: 0.1s;">
+          <div class="doctor-card__image">
+            <div class="doctor-card__avatar">👨‍⚕️</div>
+            <span class="doctor-card__status">● Available</span>
+          </div>
+          <div class="doctor-card__info">
+            <h3 class="doctor-card__name">Dr. Arjun Mehta</h3>
+            <p class="doctor-card__specialty">Interventional Cardiologist</p>
+            <div class="doctor-card__details">
+              <div class="doctor-card__detail">
+                <div class="doctor-card__detail-value">18+</div>
+                <div class="doctor-card__detail-label">Years</div>
+              </div>
+              <div class="doctor-card__detail">
+                <div class="doctor-card__detail-value">5000+</div>
+                <div class="doctor-card__detail-label">Surgeries</div>
+              </div>
+              <div class="doctor-card__detail">
+                <div class="doctor-card__detail-value">4.9</div>
+                <div class="doctor-card__detail-label">Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 2 -->
+        <div class="doctor-card reveal" data-tilt style="transition-delay: 0.2s;">
+          <div class="doctor-card__image">
+            <div class="doctor-card__avatar">👩‍⚕️</div>
+            <span class="doctor-card__status">● Available</span>
+          </div>
+          <div class="doctor-card__info">
+            <h3 class="doctor-card__name">Dr. Priya Sharma</h3>
+            <p class="doctor-card__specialty">Neurologist & Stroke Specialist</p>
+            <div class="doctor-card__details">
+              <div class="doctor-card__detail">
+                <div class="doctor-card__detail-value">15+</div>
+                <div class="doctor-card__detail-label">Years</div>
+              </div>
+              <div class="doctor-card__detail">
+                <div class="doctor-card__detail-value">3500+</div>
+                <div class="doctor-card__detail-label">Patients</div>
+              </div>
+              <div class="doctor-card__detail">
+                <div class="doctor-card__detail-value">4.8</div>
+                <div class="doctor-card__detail-label">Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 3 -->
+        <div class="doctor-card reveal" data-tilt style="transition-delay: 0.3s;">
+          <div class="doctor-card__image">
+            <div class="doctor-card__avatar">👨‍⚕️</div>
+            <span class="doctor-card__status">● Available</span>
+          </div>
+          <div class="doctor-card__info">
+            <h3 class="doctor-card__name">Dr. Vikram Patel</h3>
+            <p class="doctor-card__specialty">Orthopedic Surgeon</p>
+            <div class="doctor-card__details">
+              <div class="doctor-card__detail">
+                <div class="doctor-card__detail-value">20+</div>
+                <div class="doctor-card__detail-label">Years</div>
+              </div>
+              <div class="doctor-card__detail">
+                <div class="doctor-card__detail-value">7000+</div>
+                <div class="doctor-card__detail-label">Surgeries</div>
+              </div>
+              <div class="doctor-card__detail">
+                <div class="doctor-card__detail-value">4.9</div>
+                <div class="doctor-card__detail-label">Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Doctor 4 -->
+        <div class="doctor-card reveal" data-tilt style="transition-delay: 0.4s;">
+          <div class="doctor-card__image">
+            <div class="doctor-card__avatar">👩‍⚕️</div>
+            <span class="doctor-card__status">● Available</span>
+          </div>
+          <div class="doctor-card__info">
+            <h3 class="doctor-card__name">Dr. Sneha Reddy</h3>
+            <p class="doctor-card__specialty">Pediatric Specialist</p>
+            <div class="doctor-card__details">
+              <div class="doctor-card__detail">
+                <div class="doctor-card__detail-value">12+</div>
+                <div class="doctor-card__detail-label">Years</div>
+              </div>
+              <div class="doctor-card__detail">
+                <div class="doctor-card__detail-value">8000+</div>
+                <div class="doctor-card__detail-label">Patients</div>
+              </div>
+              <div class="doctor-card__detail">
+                <div class="doctor-card__detail-value">5.0</div>
+                <div class="doctor-card__detail-label">Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APPOINTMENTS — 3D Floating Form ===== -->
+  <section class="appointments section" id="appointments">
+    <div class="container">
+      <div class="appointments__grid">
+        <!-- Form -->
+        <div class="appointments__form-wrapper reveal-left">
+          <form class="appointment-form" id="appointmentForm">
+            <h3 class="appointment-form__title">Request an Appointment</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <select id="time" name="time" required>
+                  <option value="" disabled selected>Select Time Slot</option>
+                  <option value="morning">Morning (9 AM – 1 PM)</option>
+                  <option value="evening">Evening (5 PM – 8 PM)</option>
+                  <option value="sunday">Sunday (10 AM – 12 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Reason for Visit</label>
+              <textarea id="message" name="message" rows="3" placeholder="Brief description of your health concern..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary">
+              <span>📅</span> Confirm Appointment
+            </button>
+          </form>
+        </div>
+
+        <!-- Info Side -->
+        <div class="appointments__info reveal-right">
+          <span class="section__label">Appointments</span>
+          <h2 class="section__title">Schedule Your<br>Visit Today</h2>
+          <p class="section__subtitle">
+            Call us or fill in the form to book your appointment at Saatvika
+            Family Clinic. Walk-ins are also welcome during clinic hours.
+          </p>
+
+          <div class="appointments__info-cards">
+            <div class="info-card">
+              <div class="info-card__icon">⏰</div>
+              <div class="info-card__content">
+                <h4>Mon – Sat</h4>
+                <p>9:00 AM – 1:00 PM &amp; 5:00 PM – 8:00 PM</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card__icon">🌞</div>
+              <div class="info-card__content">
+                <h4>Sunday</h4>
+                <p>10:00 AM – 12:00 PM</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card__icon">📞</div>
+              <div class="info-card__content">
+                <h4>Call Direct</h4>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card__icon">📍</div>
+              <div class="info-card__content">
+                <h4>Location</h4>
+                <p>BTM Layout, Bengaluru – 560076</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS — 3D Carousel ===== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="testimonials__header reveal">
+        <span class="section__label" style="justify-content: center;">Testimonials</span>
+        <h2 class="section__title">What Our Families<br>Say About Us</h2>
+        <p class="section__subtitle">
+          Hear from families across Bengaluru who trust Saatvika Family Clinic
+          for their everyday healthcare needs.
+        </p>
+      </div>
+
+      <div class="carousel-3d" id="carousel3D">
+        <div class="carousel-3d__track" id="carouselTrack">
+          <!-- Card 1 -->
+          <div class="carousel-3d__card">
+            <div class="carousel-3d__card-stars">★★★★★</div>
+            <p class="carousel-3d__card-quote">
+              Dr. Rao has been our family doctor for over 8 years. He remembers
+              our health history and always takes time to explain everything.
+              We would never go anywhere else.
+            </p>
+            <div class="carousel-3d__card-author">
+              <div class="carousel-3d__card-avatar">RV</div>
+              <div>
+                <div class="carousel-3d__card-name">Rekha Venkatesh</div>
+                <div class="carousel-3d__card-role">Family Patient, BTM Layout</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="carousel-3d__card">
+            <div class="carousel-3d__card-stars">★★★★★</div>
+            <p class="carousel-3d__card-quote">
+              The clinic never feels rushed. Every visit is comfortable and
+              professional. Dr. Rao listens carefully and explains clearly.
+              Highly recommended for the whole family.
+            </p>
+            <div class="carousel-3d__card-author">
+              <div class="carousel-3d__card-avatar">AM</div>
+              <div>
+                <div class="carousel-3d__card-name">Aditya Murthy</div>
+                <div class="carousel-3d__card-role">Regular Patient</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="carousel-3d__card">
+            <div class="carousel-3d__card-stars">★★★★★</div>
+            <p class="carousel-3d__card-quote">
+              We found our permanent family doctor at Saatvika. Excellent care
+              for both adults and children. My kids actually look forward
+              to their checkups now!
+            </p>
+            <div class="carousel-3d__card-author">
+              <div class="carousel-3d__card-avatar">PS</div>
+              <div>
+                <div class="carousel-3d__card-name">Priya Subramaniam</div>
+                <div class="carousel-3d__card-role">Mother of Two</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="carousel-3d__card">
+            <div class="carousel-3d__card-stars">★★★★★</div>
+            <p class="carousel-3d__card-quote">
+              Dr. Rao has been managing my father's diabetes and hypertension
+              for years. His approach is thorough, patient, and always
+              evidence-based. We are truly grateful.
+            </p>
+            <div class="carousel-3d__card-author">
+              <div class="carousel-3d__card-avatar">VK</div>
+              <div>
+                <div class="carousel-3d__card-name">Vijay Kumar</div>
+                <div class="carousel-3d__card-role">Caregiver, Bengaluru</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="carousel-3d__card">
+            <div class="carousel-3d__card-stars">★★★★★</div>
+            <p class="carousel-3d__card-quote">
+              As a senior citizen, I need a doctor who genuinely listens.
+              Dr. Srinivas Rao does exactly that — calm, caring, and never
+              dismissive. Saatvika Clinic is my second home.
+            </p>
+            <div class="carousel-3d__card-author">
+              <div class="carousel-3d__card-avatar">LR</div>
+              <div>
+                <div class="carousel-3d__card-name">Lakshmi Raghavan</div>
+                <div class="carousel-3d__card-role">Senior Patient</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-3d__controls">
+        <button class="carousel-3d__btn" id="carouselPrev" aria-label="Previous testimonial">◀</button>
+        <div class="carousel-3d__dots" id="carouselDots">
+          <button class="carousel-3d__dot active" data-index="0" aria-label="Go to testimonial 1"></button>
+          <button class="carousel-3d__dot" data-index="1" aria-label="Go to testimonial 2"></button>
+          <button class="carousel-3d__dot" data-index="2" aria-label="Go to testimonial 3"></button>
+          <button class="carousel-3d__dot" data-index="3" aria-label="Go to testimonial 4"></button>
+          <button class="carousel-3d__dot" data-index="4" aria-label="Go to testimonial 5"></button>
+        </div>
+        <button class="carousel-3d__btn" id="carouselNext" aria-label="Next testimonial">▶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT — 3D Cards ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__header reveal">
+        <span class="section__label" style="justify-content: center;">Contact Us</span>
+        <h2 class="section__title">Get In Touch<br>With Us</h2>
+        <p class="section__subtitle">
+          Have questions or need assistance? Reach out to us through
+          any of the channels below.
+        </p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact-card reveal" data-tilt style="transition-delay: 0.1s;">
+          <div class="contact-card__icon">📍</div>
+          <h3 class="contact-card__title">Visit Us</h3>
+          <p class="contact-card__text">
+            27, 2nd Cross Road,<br>
+            BTM Layout,<br>
+            Bengaluru – 560076
+          </p>
+        </div>
+
+        <div class="contact-card reveal" data-tilt style="transition-delay: 0.2s;">
+          <div class="contact-card__icon">📞</div>
+          <h3 class="contact-card__title">Call Us</h3>
+          <p class="contact-card__text">
+            +91 98765 43210<br>
+            Mon–Sat: 9 AM–1 PM &amp; 5–8 PM<br>
+            Sunday: 10 AM–12 PM
+          </p>
+        </div>
+
+        <div class="contact-card reveal" data-tilt style="transition-delay: 0.3s;">
+          <div class="contact-card__icon">📧</div>
+          <h3 class="contact-card__title">Email Us</h3>
+          <p class="contact-card__text">
+            hello@saatvikaclinic.in<br><br>
+            We reply within 24 hours
+          </p>
+        </div>
+      </div>
+
+      <div class="contact__map reveal">
+        <div class="contact__map-placeholder">
+          <div class="contact__map-icon">🗺️</div>
+          <p class="contact__map-text">Saatvika Family Clinic — 27, 2nd Cross Road, BTM Layout, Bengaluru – 560076</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">
+            <div class="nav__logo-icon">⚕</div>
+            <span class="nav__logo-text">Saatvika</span>
+          </a>
+          <p class="footer__brand-description">
+            Saatvika Family Clinic — where families in BTM Layout, Bengaluru
+            receive warm, personal, and evidence-based primary care since 2009.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="#about" class="footer__link">About Us</a>
+          <a href="#services" class="footer__link">Services</a>
+          <a href="#doctors" class="footer__link">Our Doctors</a>
+          <a href="#appointments" class="footer__link">Appointments</a>
+          <a href="#contact" class="footer__link">Contact</a>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Our Services</h4>
+          <a href="#services" class="footer__link">General Medicine</a>
+          <a href="#services" class="footer__link">Pediatric Care</a>
+          <a href="#services" class="footer__link">Elder Care</a>
+          <a href="#services" class="footer__link">Preventive Checkups</a>
+          <a href="#services" class="footer__link">Health Counselling</a>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Support</h4>
+          <a href="#" class="footer__link">Health Blog</a>
+          <a href="#" class="footer__link">Patient Portal</a>
+          <a href="#" class="footer__link">Insurance Partners</a>
+          <a href="#" class="footer__link">FAQs</a>
+          <a href="#" class="footer__link">Careers</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Saatvika Family Clinic, BTM Layout, Bengaluru. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
